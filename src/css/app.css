@@ -1,0 +1,13 @@
+.badge_absolute {
+  position: fixed;
+  bottom: 0;
+}
+.logo-img {
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  .logo-img {
+    height: 200px;
+  }
+}

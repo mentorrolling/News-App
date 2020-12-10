@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+import ClimaApp from "./component/ClimaApp";
+import NewsApp from "./component/NewsApp";
+import Logo from "./imagenes/logo.png";
+
+import "./css/app.css";
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container" id="home">
+      <div className="row mt-2">
+        <div className="col-12 col-md-8 offset-md-2 text-center">
+          <img className="logo-img" src={Logo} alt="Logo" />
+        </div>
+      </div>
+      <div className="row">
+        <div className="col-12 col-md-10 offset-md-1 col-lg-8 offset-lg-2 mt-4">
+          <ClimaApp />
+        </div>
+      </div>
+      <NewsApp />
+      <div className="row d-md-none">
+        <div className="col-6 offset-3  text-center badge_absolute">
+          <h4>
+            <a
+              href="#home"
+              className="badge badge-pill badge-primary pl-3 pr-3"
+            >
+              Tap to update
+            </a>
+          </h4>
+        </div>
+      </div>
     </div>
   );
 }
-
-export default App;
