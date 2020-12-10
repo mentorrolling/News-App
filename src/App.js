@@ -23,10 +23,7 @@ export default function App() {
       <div className="row d-md-none">
         <div className="col-6 offset-3  text-center badge_absolute">
           <h4>
-            <a
-              href="#home"
-              className="badge badge-pill badge-primary pl-3 pr-3"
-            >
+            <a href="/" className="badge badge-pill badge-primary pl-3 pr-3">
               Tap to update
             </a>
           </h4>
